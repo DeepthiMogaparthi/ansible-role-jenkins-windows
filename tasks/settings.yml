@@ -61,7 +61,7 @@
 
 - name: Immediately restart Jenkins after all changes.
   win_service: name=jenkins state=restarted
-  regiser: jenkins_started
+  register: jenkins_started
 
 - name: Remove Jenkins security init scripts after first startup.
   win_file:
