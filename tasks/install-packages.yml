@@ -1,12 +1,12 @@
 ---
-- name: Ensure cUrl is installed.
+- name: Ensure curl is installed.
   win_chocolatey:
      name: curl
      state: present
      
 - name: Ensure Java is installed
   win_chocolatey:
-     name: jre8
+     name: jdk8
      state: present
      
 - name: Ensure Jenkins is installed.
